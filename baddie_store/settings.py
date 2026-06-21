@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path, os
 import pymysql
-pymysql.install_as_MySQLdb
+pymysql.install_as_MySQLdb()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,9 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-5v+_4xx%-#i&(!jhd8xk%#4jl_6(3q&3*96i!+g7w1=(ct2tp%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['the-ultimate-baddie-store-hz3u.vercel.app', '.vercel.app']
 
 
 # Application definition
