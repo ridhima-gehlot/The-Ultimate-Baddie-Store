@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/product-details.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="tub-pd-section">
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="tub-breadcrumb mb-4">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/products/western_outfits/">Western Outfits</a>
+      <span>/</span>
+      <span>{{ product.name }}</span>
+    </nav>
+
+    <div class="row g-5 align-items-start">
+
+      <!-- LEFT: Product Image -->
+      <div class="col-12 col-md-6">
+        <div class="tub-pd-img-wrap">
+          <img src="{{ product.image.url }}" alt="{{ product.name }}" class="tub-pd-img">
+          <button class="tub-pd-wishlist-btn" title="Add to Wishlist">
+            <i class="bi bi-heart"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- RIGHT: Product Info -->
+      <div class="col-12 col-md-6">
+        <div class="tub-pd-info">
+
+          <h1 class="tub-pd-name">{{ product.name }}</h1>
+
+          <div class="tub-pd-price-row">
+            <span class="tub-pd-price">₹{{ product.price }}</span>
+            <span class="tub-pd-badge">In Stock</span>
+          </div>
+
+          <p class="tub-pd-desc">{{ product.description }}</p>
+
+          <hr class="tub-pd-divider">
+
+          <!-- Size Selector -->
+          <div class="tub-pd-sizes mb-4">
+            <p class="tub-pd-label">Select Size</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <button class="tub-size-btn">XS</button>
+              <button class="tub-size-btn ">S</button>
+              <button class="tub-size-btn">M</button>
+              <button class="tub-size-btn">L</button>
+              <button class="tub-size-btn">XL</button>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="tub-pd-actions d-flex flex-column gap-3">
+            <button class="tub-btn-cart">
+              <i class="bi bi-bag me-2"></i> Buy Now
+            </button>
+            <button class="tub-btn-wishlist">
+              <i class="bi bi-heart me-2"></i> Add to Cart
+            </button>
+          </div>
+
+          <!-- Delivery Info -->
+          <div class="tub-pd-delivery mt-4">
+            <div class="tub-delivery-item">
+              <i class="bi bi-truck"></i>
+              <span>Free delivery on orders above ₹999</span>
+            </div>
+            <div class="tub-delivery-item">
+              <i class="bi bi-arrow-repeat"></i>
+              <span>Easy 7-day returns</span>
+            </div>
+            <div class="tub-delivery-item">
+              <i class="bi bi-shield-check"></i>
+              <span>100% authentic products</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

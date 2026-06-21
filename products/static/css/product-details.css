@@ -1,0 +1,216 @@
+/* =============================
+   TUB - Product Details Page
+   ============================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+.tub-pd-section {
+  background-color: #FDF0F3;
+  min-height: 100vh;
+  padding: 40px 0 80px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Breadcrumb */
+.tub-breadcrumb {
+  font-size: 0.8rem;
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tub-breadcrumb a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.tub-breadcrumb a:hover {
+  color: #c0446a;
+}
+.tub-breadcrumb span:last-child {
+  color: #c0446a;
+  font-weight: 500;
+}
+
+/* Image */
+.tub-pd-img-wrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(192, 68, 106, 0.10);
+}
+.tub-pd-img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+.tub-pd-wishlist-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #c0446a;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.tub-pd-wishlist-btn:hover {
+  background: #c0446a;
+  color: #fff;
+}
+
+/* Info Panel */
+.tub-pd-info {
+  padding: 8px 0;
+}
+.tub-pd-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+/* Price Row */
+.tub-pd-price-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.tub-pd-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #c0446a;
+}
+.tub-pd-badge {
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Description */
+.tub-pd-desc {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.tub-pd-divider {
+  border-color: #f0d8df;
+  margin: 24px 0;
+}
+
+/* Size */
+.tub-pd-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  margin-bottom: 10px;
+}
+.tub-size-btn {
+  border: 1.5px solid #ddd;
+  background: #fff;
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Montserrat', sans-serif;
+}
+.tub-size-btn:hover,
+.tub-size-btn.active {
+  border-color: #c0446a;
+  background: #c0446a;
+  color: #fff;
+}
+
+/* CTA Buttons */
+.tub-btn-cart {
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+.tub-btn-cart:hover {
+  background: #c0446a;
+  transform: translateY(-1px);
+}
+.tub-btn-wishlist {
+  background: transparent;
+  color: #c0446a;
+  border: 1.5px solid #c0446a;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tub-btn-wishlist:hover {
+  background: #c0446a;
+  color: #fff;
+}
+
+/* Delivery Info */
+.tub-pd-delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tub-delivery-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.82rem;
+  color: #666;
+}
+.tub-delivery-item i {
+  color: #c0446a;
+  font-size: 1rem;
+  width: 18px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .tub-pd-img {
+    height: 340px;
+  }
+  .tub-pd-name {
+    font-size: 1.5rem;
+  }
+  .tub-pd-price {
+    font-size: 1.3rem;
+  }
+}

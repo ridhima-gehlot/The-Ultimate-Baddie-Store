@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_css %}   <link rel="stylesheet" href="{% static 'css/accessories.css' %}"> {% endblock %}
+{% block content %}
+<section class="tub-products-section">
+ <div class="category-header text-center mb-5">
+      <h2 class="title"> Accessories </h2>
+    </div>
+  <div class="row g-3">
+    {% for product in products %}
+    <div class="col-6 col-md-4">
+       <a href="{% url 'product_details' product.id %}" class="text-decoration-none">
+      <div class="tub-product-card">
+        <div class="tub-product-img-wrap">
+          <img src="{{ product.image.url }}" alt="{{ product.name }}">
+          <button class="tub-wishlist-btn"><i class="bi bi-heart"></i></button>
+        </div>
+        <div class="tub-product-info">
+          <h4 class="tub-product-name">{{ product.name }}</h4>
+          <div class="tub-price-row">
+            <span class="tub-price-main">₹{{ product.price }}</span>
+          </div>
+          <p class="tub-cod">{{ product.description }}</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

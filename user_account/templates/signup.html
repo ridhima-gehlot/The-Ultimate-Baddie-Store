@@ -1,0 +1,88 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account – The Baddie Ultimate Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+   <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+</head>
+<body>
+
+<section class="tub-signup-section">
+  <div class="tub-signup-card">
+
+    <div class="tub-signup-header">
+      <p class="tub-eyebrow">Welcome</p>
+      <h1 class="tub-title">Create Your Account</h1>
+      <p class="tub-subtitle">Your style journey starts here.</p>
+    </div>
+
+    <form method="POST" novalidate>
+      {% csrf_token %}
+
+      <div class="tub-form-row">
+        <div class="tub-form-group">
+          <label for="id_first_name">First Name</label>
+          {{ signup_form.first_name }}
+          {% if signup_form.first_name.errors %}
+            <span class="tub-error">{{ signup_form.first_name.errors|join:", " }}</span>
+          {% endif %}
+        </div>
+        <div class="tub-form-group">
+          <label for="id_last_name">Last Name</label>
+          {{ signup_form.last_name }}
+          {% if signup_form.last_name.errors %}
+            <span class="tub-error">{{ signup_form.last_name.errors|join:", " }}</span>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="tub-form-group">
+        <label for="id_username">Username</label>
+        {{ signup_form.username }}
+        {% if signup_form.username.errors %}
+          <span class="tub-error">{{ signup_form.username.errors|join:", " }}</span>
+        {% endif %}
+      </div>
+
+      <div class="tub-form-group">
+        <label for="id_email">Email Address</label>
+        {{ signup_form.email }}
+        {% if signup_form.email.errors %}
+          <span class="tub-error">{{ signup_form.email.errors|join:", " }}</span>
+        {% endif %}
+      </div>
+
+      <div class="tub-form-group">
+        <label for="id_password1">Password</label>
+        {{ signup_form.password1 }}
+        {% if signup_form.password1.errors %}
+          <span class="tub-error">{{ signup_form.password1.errors|join:", " }}</span>
+        {% endif %}
+      </div>
+
+      <div class="tub-form-group">
+        <label for="id_password2">Confirm Password</label>
+        {{ signup_form.password2 }}
+        {% if signup_form.password2.errors %}
+          <span class="tub-error">{{ signup_form.password2.errors|join:", " }}</span>
+        {% endif %}
+      </div>
+
+      {% if signup_form.non_field_errors %}
+        <div class="tub-error-box">{{ signup_form.non_field_errors }}</div>
+      {% endif %}
+
+      <button type="submit" class="tub-btn">Create Account</button>
+
+      <p class="tub-alt-link">
+        Already have an account? <a href="{% url 'login' %}">Sign in</a>
+      </p>
+
+    </form>
+  </div>
+</section>
+</body>
+</html>

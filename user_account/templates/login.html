@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In – The Baddie Ultimate Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+
+<section class="tub-login-section">
+  <div class="tub-login-card">
+
+    <div class="text-center mb-4">
+      <p class="tub-eyebrow">Welcome Back</p>
+      <h1 class="tub-title">Sign In</h1>
+      <p class="tub-subtitle">Good to see you again.</p>
+    </div>
+
+    <form method="POST" novalidate>
+      {% csrf_token %}
+
+      <div class="mb-4">
+        <label for="id_username" class="tub-label">Username</label>
+        <input type="text" id="id_username" name="username" class="form-control tub-input" autocomplete="username" autofocus>
+      </div>
+
+      <div class="mb-3">
+        <label for="id_password" class="tub-label">Password</label>
+        <input type="password" id="id_password" name="password" class="form-control tub-input" autocomplete="current-password">
+      </div>
+
+      {% if error %}
+        <div class="alert tub-error-box" role="alert">
+          {{ error }}
+        </div>
+      {% endif %}
+
+      <div class="d-grid mt-3">
+        <button type="submit" class="btn tub-btn">Sign In</button>
+      </div>
+
+      <p class="tub-alt-link text-center mt-3">
+        New here? <a href="{% url 'signup' %}">Create an account</a>
+      </p>
+
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+ {% block title %}The Ultimate Baddie Store {% endblock %}
+ {% block extra_css %}   <link rel="stylesheet" href="{% static 'css/homepage.css' %}"> {% endblock %}
+{% block content %}
+  <!-- ─── HERO ───────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="diamond-sm">&#9670;</span>
+        Dress up. Stock up. Show up.
+        <span class="diamond-sm">&#9670;</span>
+      </div>
+      <div class="hero-title-top">The Ultimate </div>
+      <div class="hero-title-bottom">Baddie Store</div>
+      <p class="hero-tagline">For the girl who has everything — and needs more.</p>
+    </div>
+  </section>
+
+<!-- ─── SHOP BY CATEGORY ─────────────────────────── -->
+<section class="category-section">
+  <div class="container">
+
+    <div class="category-header text-center mb-5">
+      <p class="category-eyebrow">Curated Collections</p>
+      <h2 class="category-title">Shop By Category</h2>
+    </div>
+
+   <div class="row g-4">
+
+  <div class="col-12 col-sm-6">
+    <a href="{% url 'western_outfits' %}" class="category-card">
+      <div class="category-icon">
+        <img src="{% static 'images/bodycon.jpeg' %}" alt="Western Outfits">
+        <div class="category-text">
+          <h3 class="category-name">Western Outfits</h3>
+          <p class="category-desc">Bold silhouettes &amp; statement pieces</p>
+          <span class="category-link">EXPLORE →</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-12 col-sm-6">
+    <a href="{% url 'traditional_outfits' %}" class="category-card">
+      <div class="category-icon">
+        <img src="{% static 'images/traditional.jpeg' %}" alt="Traditional Outfits">
+        <div class="category-text">
+          <h3 class="category-name">Traditional Outfits</h3>
+          <p class="category-desc">Elegant ethnic wear</p>
+          <span class="category-link">EXPLORE →</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-12 col-sm-6">
+    <a href="{% url 'accessories' %}" class="category-card">
+      <div class="category-icon">
+        <img src="{% static 'images/accessories.jpeg' %}" alt="Accessories">
+        <div class="category-text">
+          <h3 class="category-name">Accessories</h3>
+          <p class="category-desc">Bold silhouettes &amp; statement pieces</p>
+          <span class="category-link">EXPLORE →</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-12 col-sm-6">
+    <a href="{% url 'daily_products' %}" class="category-card">
+      <div class="category-icon">
+        <img src="{% static 'images/daily_products.jpeg' %}" alt="Daily Use Products">
+        <div class="category-text">
+          <h3 class="category-name">Daily Use Products</h3>
+          <p class="category-desc">Bold silhouettes &amp; statement pieces</p>
+          <span class="category-link">EXPLORE →</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>  
+</section>
+{% endblock %}

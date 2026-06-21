@@ -1,0 +1,152 @@
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: linear-gradient(135deg,
+    #fff0f4 0%, #fce4ec 50%, #f8d7e3 100%);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .tub-signup-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+  }
+
+  .tub-signup-card {
+    background: #fff;
+    border-radius: 4px;
+    padding: 3rem 2.5rem;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 4px 30px rgba(30, 20, 40, 0.08);
+  }
+
+  .tub-signup-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .tub-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #C2798A;
+    margin-bottom: 0.4rem;
+  }
+
+  .tub-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #1C1B29;
+    margin-bottom: 0.4rem;
+  }
+
+  .tub-subtitle {
+    font-size: 0.85rem;
+    color: #999;
+  }
+
+  .tub-form-row {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .tub-form-row .tub-form-group {
+    flex: 1;
+  }
+
+  .tub-form-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tub-form-group label {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+
+  .tub-form-group input {
+    border: 1px solid #E8D5DA;
+    border-radius: 3px;
+    padding: 0.65rem 0.9rem;
+    font-size: 0.88rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #1C1B29;
+    background: #FDFAFB;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    width: 100%;
+  }
+
+  .tub-form-group input:focus {
+    border-color: #C2798A;
+    background: #fff;
+  }
+
+  .tub-error {
+    font-size: 0.74rem;
+    color: #C0392B;
+    margin-top: 0.3rem;
+  }
+
+  .tub-error-box {
+    background: #FFF0F0;
+    border: 1px solid #F5C6CB;
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+    font-size: 0.82rem;
+    color: #C0392B;
+    margin-bottom: 1rem;
+  }
+
+  .tub-btn {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #1C1B29;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 0.5rem;
+  }
+
+  .tub-btn:hover {
+    background-color: #C2798A;
+  }
+
+  .tub-alt-link {
+    text-align: center;
+    font-size: 0.82rem;
+    color: #999;
+    margin-top: 1.2rem;
+  }
+
+  .tub-alt-link a {
+    color: #C2798A;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .tub-alt-link a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    .tub-form-row { flex-direction: column; gap: 0; }
+    .tub-signup-card { padding: 2rem 1.25rem; }
+    .tub-title { font-size: 1.6rem; }
+  }
