@@ -27,14 +27,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-<<<<<<< HEAD
 DEBUG = config('DEBUG', default=False, cast=bool)
-
 ALLOWED_HOSTS = []
-=======
 DEBUG = False
 ALLOWED_HOSTS = ['the-ultimate-baddie-store-hz3u.vercel.app', '.vercel.app']
->>>>>>> a3122f693c7776c139bf32d7066395f7665429fd
+
 
 
 # Application definition
