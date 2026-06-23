@@ -1,4 +1,9 @@
 Django>=5.2
+<<<<<<< HEAD
+=======
+Flask==3.0.3
+gunicorn==22.0.0
+>>>>>>> 2899841ea654bd90180d4d5adb85a7c01d5d4fc0
 PyMySQL
 Pillow
 python-dotenv
