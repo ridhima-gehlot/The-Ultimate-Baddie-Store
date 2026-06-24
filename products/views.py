@@ -31,42 +31,4 @@ def daily_products(request):
 def product_details(request, id):
     product=Product.objects.get(id=id)
     return render(request, 'product-details.html', {'product': product})
-
-def buy_product(request, id):
-    product=Product.objects.get(id=id)
-    quantity=int(request.get('quantity'))
-    size=int(request.get('size'))
-    total_cost=product*quantity
-
-    # Fetching details 
-    if request.method=="POST":
-        name=request.get('name')
-        address=request.get('address')
-        phone_no=request.get('phone_no')
-        state=request.get('state')
-        city=request.get('city')
-        pincode=request.get('pincode')
-
-    # Mode of payment
-    mode=request.get('mode')
-    if mode=="cash on delivery":
-        print("payment needs to be done")
-    else:
-        print("payment  recieved")
-    conetext={
-    'product': product,
-    'quantity': quantity,
-    'size': size,
-    'total_cost': total_cost,
-    'name': name,
-    'address': address,
-    'phone_no': phone_no,
-    'state': state
-    'city'
-}
-
-
-    
-
-
 # Create your views here.
