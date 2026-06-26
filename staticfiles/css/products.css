@@ -1,0 +1,81 @@
+.title{
+    color:#8B1A3A;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+}
+.tub-product-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ffffff;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.tub-product-card:hover { transform: translateY(-4px); }
+
+.tub-product-img-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 80%;
+    overflow: hidden;
+    background: #ffffff;
+    object-fit: cover;
+    object-position: top;
+}
+.tub-product-img-wrap img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: contain;
+}
+.tub-wishlist-btn {
+    position: absolute;
+    top: 8px; right: 8px;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    border-radius: 50%;
+    width: 32px; height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.tub-wishlist-btn:hover { background: rgba(255,100,150,0.7); }
+
+.tub-product-info { padding: 10px 10px 12px; }
+
+.tub-product-name {
+    font-size: 20px;
+    color: #1a1a2e;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+}
+.tub-price-row {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.tub-price-main {
+    font-size: 15px;
+    font-weight: 600;
+    color:  #c0155a;
+}
+.tub-products-section {
+    background: linear-gradient(135deg,
+    #fff0f4 0%, #fce4ec 50%, #f8d7e3 100%);;
+    padding: 20px 12px;
+}
+.tub-section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.tub-cod{
+    color:#555555;
+}

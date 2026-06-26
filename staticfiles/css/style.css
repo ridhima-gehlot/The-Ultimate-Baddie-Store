@@ -1,0 +1,169 @@
+:root {
+      --crimson:     #9b1a4a;
+      --crimson-nav: #8b1442;
+      --navy:        #1a2035;
+      --blush-start: #fff0f4;
+      --blush-mid:   #fce4ec;
+      --blush-end:   #f8d7e3;
+      --accent:      #c2275e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f9f0f3;
+      overflow-x: hidden;
+      min-height: 100vh;        /* add this */
+      display: flex;             /* add this */
+      flex-direction: column;    /* add this */
+    }
+
+    /* ─── NAVBAR ─────────────────────────────────────── */
+    .navbar-baddie {
+      background-color: var(--crimson-nav);
+      padding: 0.85rem 2rem;
+    }
+
+    .navbar-baddie .navbar-brand {
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .navbar-baddie .navbar-brand .diamond {
+      font-size: 0.6rem;
+      opacity: 0.9;
+    }
+
+    .navbar-baddie .nav-link {
+      color: rgba(255,255,255,0.92) !important;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: capitalize;
+      padding: 0.4rem 1rem !important;
+      transition: color 0.2s;
+    }
+
+    .navbar-baddie .nav-link:hover { color: #fff !important; }
+
+    .navbar-baddie .nav-icons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .navbar-baddie .nav-icons i {
+      color: rgba(255,255,255,0.92);
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .navbar-baddie .nav-icons i:hover { color: #fff; }
+
+    /* Hamburger toggler */
+    .navbar-toggler {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
+
+/* Footer*/
+.tub-footer {
+  background-color: #8B1A4A;
+  color: #ffffff;
+   width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: auto;
+}
+
+.tub-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tub-footer__diamond {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.tub-footer__brand-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.tub-footer__tagline {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+.tub-footer__heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.tub-footer__links li {
+  margin-bottom: 10px;
+}
+
+.tub-footer__links a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.tub-footer__links a:hover {
+  color: #ffffff;
+}
+
+.tub-footer__socials {
+  display: flex;
+  gap: 16px;
+}
+
+.tub-footer__socials a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.tub-footer__socials a:hover {
+  color: #ffffff;
+}
+
+.tub-footer__email {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.tub-footer__top {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+}
+
+.tub-footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}

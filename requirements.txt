@@ -5,3 +5,4 @@ PyMySQL
 Pillow
 python-dotenv
 python-decouple
+whitenoise
