@@ -1,0 +1,283 @@
+[
+{
+  "model": "products.cateogory",
+  "pk": 1,
+  "fields": {
+    "name": "Western Outfits"
+  }
+},
+{
+  "model": "products.cateogory",
+  "pk": 2,
+  "fields": {
+    "name": "Traditional Outfits"
+  }
+},
+{
+  "model": "products.cateogory",
+  "pk": 3,
+  "fields": {
+    "name": "Accessories"
+  }
+},
+{
+  "model": "products.cateogory",
+  "pk": 4,
+  "fields": {
+    "name": "Daily Products"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name": "Blue Denim Jeans",
+    "price": "1299.00",
+    "description": "High waisted and perfect fit",
+    "image": "products/WhatsApp_Image_2026-06-05_at_7.27.46_PM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "name": "Red Bodycon Dress",
+    "price": "1999.00",
+    "description": "Elegant Black bodycon dress",
+    "image": "products/WhatsApp_Image_2026-06-05_at_7.27.44_PM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "category": 1,
+    "name": "White Bodycon Dress",
+    "price": "1999.00",
+    "description": "Elegant white bodycon dress",
+    "image": "products/WhatsApp_Image_2026-06-05_at_7.27.48_PM_1.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "category": 1,
+    "name": "White Oversized Shirt",
+    "price": "999.00",
+    "description": "Casual oversized cotton shirt for everyday wear",
+    "image": "products/WhatsApp_Image_2026-06-05_at_7.27.47_PM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "category": 1,
+    "name": "Beige Cargo Pants",
+    "price": "1499.00",
+    "description": "Trendy cargo pants with nice fit",
+    "image": "products/WhatsApp_Image_2026-06-05_at_7.27.47_PM_1.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "category": 1,
+    "name": "Cropped Hoodie",
+    "price": "2000.00",
+    "description": "Soft hoodie for casual outings",
+    "image": "products/WhatsApp_Image_2026-06-05_at_7.27.48_PM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "category": 2,
+    "name": "Sharara",
+    "price": "1000.00",
+    "description": "Maroon sharara with intricate embroidery, a flattering slithoutte and a comfortable breathable fit",
+    "image": "products/WhatsApp_Image_2026-06-07_at_11.01.27_AM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "category": 2,
+    "name": "Half Saree",
+    "price": "1500.00",
+    "description": "Vibrant green South Indian half saree, with elegant contasting border and traditional zari detailing",
+    "image": "products/WhatsApp_Image_2026-06-07_at_11.04.19_AM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "category": 2,
+    "name": "Rajputi Poshak",
+    "price": "5000.00",
+    "description": "Pink Rajupti poshak with premium fabric. Includes lengha, kurti, kanchali and pure odhana",
+    "image": "products/WhatsApp_Image_2026-06-07_at_11.01.28_AM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "category": 2,
+    "name": "Blue Patiyala",
+    "price": "900.00",
+    "description": "Blue Patiyala with pleated  draping and a premium fabric",
+    "image": "products/WhatsApp_Image_2026-06-07_at_11.04.19_AM_1.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "category": 2,
+    "name": "White Lengha",
+    "price": "7000.00",
+    "description": "White lengha adorned with delicate small pink floral motifs. Perfect for daytime celebrations and festive occasions.",
+    "image": "products/WhatsApp_Image_2026-06-07_at_11.01.29_AM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "category": 2,
+    "name": "White Saree",
+    "price": "1000.00",
+    "description": "White saree with embroidary work for party wear",
+    "image": "products/traditional.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "category": 3,
+    "name": "Ivory Flare Studs",
+    "price": "200.00",
+    "description": "Elegant 3D Flower Stud Earrings. White Enamel Floral Statement. Earrings with gold trim",
+    "image": "products/WhatsApp_Image_2026-06-08_at_10.44.03_AM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 15,
+  "fields": {
+    "category": 3,
+    "name": "Daisy Chain Bracelete",
+    "price": "150.00",
+    "description": "Gold plated white daisy flower bracelet for women. Adustable floral jewellery",
+    "image": "products/WhatsApp_Image_2026-06-08_at_10.44.03_AM_1.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "category": 3,
+    "name": "Triple Layered Necklace",
+    "price": "300.00",
+    "description": "Perfectly curated multi-strand look in one simple elegant piece",
+    "image": "products/WhatsApp_Image_2026-06-08_at_10.44.04_AM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "category": 3,
+    "name": "Purple Blossom Arm Cuff",
+    "price": "1000.00",
+    "description": "Features an intricate, vine like design that wraps beautifully around the upper arm for a dreamy look.",
+    "image": "products/WhatsApp_Image_2026-06-08_at_10.44.04_AM_1.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "category": 3,
+    "name": "Y2K Cyber Grunge Glasses",
+    "price": "500.00",
+    "description": "Merges Y2K cyber-grunge  and punk aesthetics with an array of unique, dangling metallic charms.",
+    "image": "products/WhatsApp_Image_2026-06-08_at_10.44.04_AM_2.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "category": 3,
+    "name": "Pastel Pink Floral Ring Set",
+    "price": "800.00",
+    "description": "A beautifully coordinated ring collection with polish yellow gold finish.",
+    "image": "products/WhatsApp_Image_2026-06-08_at_10.44.05_AM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "category": 4,
+    "name": "Whisper Sanitary Napkin",
+    "price": "500.00",
+    "description": "Whisper Saniatry Napkin for women, extra large with extra absorption",
+    "image": "products/WhatsApp_Image_2026-06-09_at_11.14.07_AM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 21,
+  "fields": {
+    "category": 4,
+    "name": "Power Bank",
+    "price": "400.00",
+    "description": "Mini power bank for  daily use, comes with multiple cables, efficient battery life",
+    "image": "products/WhatsApp_Image_2026-06-09_at_11.14.08_AM.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 22,
+  "fields": {
+    "category": 4,
+    "name": "Water Bottles",
+    "price": "800.00",
+    "description": "Pack of three water bottle of different size and with motivation quotes on them",
+    "image": "products/WhatsApp_Image_2026-06-09_at_11.14.08_AM_1.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 23,
+  "fields": {
+    "category": 4,
+    "name": "Minimilast Sunscreen",
+    "price": "350.00",
+    "description": "Minimilast SPF 50 PA++++ Sunscreen. For every skin type. Protects skin for UVA and UVB rays of sun",
+    "image": "products/WhatsApp_Image_2026-06-09_at_11.14.08_AM_2.jpeg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 24,
+  "fields": {
+    "category": 4,
+    "name": "Packet of Pen",
+    "price": "100.00",
+    "description": "Packet of pen with different colour. Each packet  has 6  pens",
+    "image": "products/WhatsApp_Image_2026-06-09_at_11.14.09_AM.jpeg"
+  }
+}
+]
